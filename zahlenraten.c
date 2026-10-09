@@ -16,13 +16,13 @@ int main(){
     if (raten < ZAHL)
     {
 
-        printf("Zu klein.");
+        printf("Zu klein. Probiere eine groessere Zahl ");
     }
 
     if (raten > ZAHL)
     {
 
-        printf("Zu gross.");
+        printf("Zu gross. Probiere eine kleinere Zahl ");
     }
     return 0;
 
