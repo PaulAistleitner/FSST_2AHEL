@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <stdlib.h>
 
 int main(){
 
-    int ZAHL = 15;
+    int ZAHL = rand();
+    printf("%d" ,ZAHL);
     int raten;
     
 
