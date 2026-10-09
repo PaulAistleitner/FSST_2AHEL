@@ -4,16 +4,16 @@ int main(){
 
     int ZAHL = 15;
     int raten;
-    int erraten = 0;
+    
 
-    while(erraten == 0){
+    for(int i = 0; i < 10; i++){
         printf("Gib eine Zahl ein, um die Zahl zu eraten. ");
         scanf("%d", &raten);
         if (raten == ZAHL)
         {
 
             printf("Du hast die Zahl eraten!");
-            erraten = 1;
+            i = 10;
 
         }
         
