@@ -4,25 +4,30 @@ int main(){
 
     int ZAHL = 15;
     int raten;
-    printf("Gib eine Zahl ein, um die Zahl zu eraten. ");
-    scanf("%d", &raten);
-    if (raten == ZAHL)
-    {
+    int erraten = 0;
 
-        printf("Du hast die Zahl eraten!");
+    while(erraten == 0){
+        printf("Gib eine Zahl ein, um die Zahl zu eraten. ");
+        scanf("%d", &raten);
+        if (raten == ZAHL)
+        {
 
-    }
-    
-    if (raten < ZAHL)
-    {
+            printf("Du hast die Zahl eraten!");
+            erraten = 1;
 
-        printf("Zu klein. Probiere eine groessere Zahl ");
-    }
+        }
+        
+        if (raten < ZAHL)
+        {
 
-    if (raten > ZAHL)
-    {
+            printf("Zu klein. Probiere eine groessere Zahl \n");
+        }
 
-        printf("Zu gross. Probiere eine kleinere Zahl ");
+        if (raten > ZAHL)
+        {
+
+            printf("Zu gross. Probiere eine kleinere Zahl \n");
+        }
     }
     return 0;
 
