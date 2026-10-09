@@ -6,6 +6,7 @@ int main(){
     printf("Wie heist du? \n");
     scanf("%[^\n]", &name);
     printf("Hallo %s!",name);
+    printf("Hallo");
 
 
 }
