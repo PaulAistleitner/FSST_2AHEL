@@ -1,10 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <time.h>
 
 
 int main(){
 
-    int ZAHL = rand();  // Variablen anlegen
+    srand(time(NULL));  // Standardwert fuer rand() festlegen, anhand der aktuellen Zeit
+    int ZAHL = rand() %50 +1;  // Variablen anlegen
     int raten;
 
     for(int i = 0; i < 10; i++)    // For Schleife mit 10 Versuchen
@@ -17,7 +19,7 @@ int main(){
             printf("Zahl: %d \n" ,ZAHL);
         }           
 
-        if (raten == ZAHL)  // Zahl erraten
+        else if (raten == ZAHL)  // Zahl erraten
         {
             printf("Du hast die Zahl eraten!");
             i = 10;
