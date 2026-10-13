@@ -5,12 +5,17 @@
 int main(){
 
     int ZAHL = rand();  // Variablen anlegen
-    int raten;    
-    printf("%d \n" ,ZAHL);
+    int raten;
 
-    for(int i = 0; i < 10; i++){    // For Schleife mit 10 Versuchen
+    for(int i = 0; i < 10; i++)    // For Schleife mit 10 Versuchen
+    {
         printf("Gib eine Zahl ein, um die Zahl zu eraten. ");
         scanf("%d", &raten);
+
+        if (raten == -1)
+        {
+            printf("Zahl: %d \n" ,ZAHL);
+        }           
 
         if (raten == ZAHL)  // Zahl erraten
         {
@@ -27,6 +32,11 @@ int main(){
         {
             printf("Zu gross. Probiere eine kleinere Zahl \n");
         }
+
+        else
+        {
+            printf("Eingabe ungueltig. Eingabe: %d ,Zahl: %d \n" ,raten ,ZAHL);
+        }     
     }
 
     return 0;
