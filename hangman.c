@@ -3,7 +3,7 @@
 int main()
 {
 
-    const char secret = 'X';
+    const char secret[] = "12413744";
     char guess;
     
     printf("Gib einen Buchstaben ein: ");
@@ -12,14 +12,16 @@ int main()
         printf("Ungültige Eingabe!");
         return 1;
     }
-    if (guess == secret)
+
+    int hits = 0;
+    for (int i = 0; i < sizeof(secret) - 1; i++)
     {
-        printf("Treffer (%c)" ,guess);
+        if (secret[i] == guess)
+        {
+            hits++;
+        }
     }
-    else
-    {
-        printf("Fehler");
-    }
+    printf("%d Buchstaben richtig" ,hits);
 
     return 0;
 }
