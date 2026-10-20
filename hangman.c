@@ -4,8 +4,10 @@ int main()
 {
 
     const char secret = 'X';
-    const char guess = 'Y';
+    char guess;
     
+    printf("Gib einen Buchstaben ein: ");
+    scanf("%c", &guess);
     if (guess == secret)
     {
         printf("Treffer (%c)" ,guess);
