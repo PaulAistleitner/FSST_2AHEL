@@ -8,7 +8,7 @@ int main()
     const int len = sizeof(secret) -1;
     char guessed[len];
     char guess;
-    int hits = 0; 
+    int hits = 0;
 
     //Variable initialisieren: _______
     for (int i = 0; i < len; i ++)
@@ -16,29 +16,34 @@ int main()
         guessed[i] = '_';
     }
 
-    //Einleselogik
-    printf("Gib einen Buchstaben ein: ");
-    if (scanf(" %c", &guess) != 1)
+    for (int e = 0; e < 10; e++)
     {
-        printf("Ungültige Eingabe!");
-        return 1;
-    }
 
-    //Vergleich
-    for (int i = 0; i < len; i++)
-    {
-        if (secret[i] == guess)
+        //Einleselogik
+        printf("Gib einen Buchstaben ein: ");
+        if (scanf(" %c", &guess) != 1)
         {
-            hits++;
-            guessed[i] = guess;
+            printf("Ungültige Eingabe!");
+            return 1;
         }
-    }
 
-    //Ausgabe
-    printf("%d Buchstaben richtig\n" ,hits);
-    for (int i = 0; i < len; i++)
-    {
-        printf("%c " , guessed[i]);
+        //Vergleich
+        for (int i = 0; i < len; i++)
+        {
+            if (secret[i] == guess)
+            {
+                hits++;
+                guessed[i] = guess;
+            }
+        }
+
+        //Ausgabe
+        printf("%d Buchstaben richtig\n" ,hits);
+        for (int i = 0; i < len; i++)
+        {
+            printf("%c " , guessed[i]);
+        }
+
     }
 
     return 0;
