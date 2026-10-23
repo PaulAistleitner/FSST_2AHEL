@@ -11,13 +11,12 @@ int main()
     int hits = 0; 
 
     //Variable initialisieren: _______
-    for (int i = 0; i < len; i += 2)
+    for (int i = 0; i < len; i ++)
     {
         guessed[i] = '_';
     }
 
     //Einleselogik
-    printf("%c" ,guessed);
     printf("Gib einen Buchstaben ein: ");
     if (scanf(" %c", &guess) != 1)
     {
@@ -39,8 +38,7 @@ int main()
     printf("%d Buchstaben richtig\n" ,hits);
     for (int i = 0; i < len; i++)
     {
-        printf("%c" ,guessed[i]);
-        printf(" ");
+        printf("%c " , guessed[i]);
     }
 
     return 0;
