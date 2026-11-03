@@ -1,16 +1,30 @@
 #include <stdio.h>
 
+int countHits(const char secret[], const char guess,const int len, char guessed[])
+{   
+    int hits = 0;
+    for (int i = 0; i < len; i++)
+    {
+        if (secret[i] == guess)
+        {
+            hits++;
+            guessed[i] = guess;
+        }
+    }
+    return hits;
+}
+
 int main()
 {
 
-    //Variablen anlegen
+    // Variablen anlegen
     const char secret[] = "REDBULL4EVER";
     const int len = sizeof(secret) -1;
     char guessed[len];
     char guess;
-    int hits = 0;
+    // int hits = 0;
 
-    //Variable initialisieren: _______
+    // Variable initialisieren: _______
     for (int i = 0; i < len; i ++)
     {
         guessed[i] = '_';
@@ -19,7 +33,7 @@ int main()
     for (int e = 0; e < 10; e++)
     {
 
-        //Einleselogik
+        // Einleselogik
         printf("Gib einen Buchstaben ein: ");
         if (scanf(" %c", &guess) != 1)
         {
@@ -27,23 +41,24 @@ int main()
             return 1;
         }
 
-        //Vergleich
-        for (int i = 0; i < len; i++)
-        {
-            if (secret[i] == guess)
-            {
-                hits++;
-                guessed[i] = guess;
-            }
-        }
+        // Vergleich
+        // for (int i = 0; i < len; i++)
+        // {
+        //     if (secret[i] == guess)
+        //     {
+        //         hits++;
+        //         guessed[i] = guess;
+        //     }
+        // }
 
-        //Ausgabe
+        hitscountHits(secret, guess, len, guessed);
+
+        // Ausgabe
         printf("%d Buchstaben richtig\n" ,hits);
         for (int i = 0; i < len; i++)
         {
             printf("%c " , guessed[i]);
         }
-
     }
 
     return 0;
