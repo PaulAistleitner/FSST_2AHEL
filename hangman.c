@@ -51,7 +51,7 @@ int main()
         //     }
         // }
 
-        hitscountHits(secret, guess, len, guessed);
+        int hits = countHits(secret, guess, len, guessed);
 
         // Ausgabe
         printf("%d Buchstaben richtig\n" ,hits);
