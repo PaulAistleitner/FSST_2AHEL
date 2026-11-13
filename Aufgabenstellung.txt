@@ -1,0 +1,26 @@
+Hallo! Schön, dass du mich bei diesem kleinen Projekt unterstützen kannst. Ich erkläre dir einfach mal, was ich mir vorstelle:
+
+Ausgangssituation:
+Ich habe vor kurzem mit dem Laufen begonnen, um mich nach der Arbeit etwas fit zu halten. Bisher trage ich mir meine Zeiten immer mühsam auf einem Notizblock ein, aber das ist auf Dauer ziemlich unpraktisch.
+
+Dein Anliegen:
+Ich brauche ein kleines Programm, das mir bei der Auswertung meiner Laufeinheiten hilft. Es soll mir ermöglichen, entweder mein Tempo oder meine voraussichtliche Laufzeit für eine Strecke zu berechnen, damit ich meine Trainingseinheiten besser planen kann.
+
+Gewünschte Funktionen:
+Das Programm soll zwei verschiedene Berechnungen anbieten können:
+
+Entweder berechnet es aus der gelaufenen Strecke (in Kilometern) und der benötigten Zeit (in Minuten), wie viele Minuten ich pro Kilometer gebraucht habe (das Durchschnittstempo).
+
+Oder es berechnet aus einer geplanten Strecke und meinem gewünschten Tempo, wie lange ich insgesamt unterwegs sein werde.
+Beim Start des Programms soll man direkt auswählen können, welche dieser beiden Berechnungen man durchführen möchte.
+
+Bedienung:
+Das Programm soll über die Konsole bedienbar sein. Nach dem Start wählt man aus, was man berechnen möchte (z. B. über eine kleine Menü-Auswahl mit Nummern). Danach gibt man nacheinander die erforderlichen Werte ein (also Kilometer und Minuten). Das Programm rechnet kurz nach und gibt das Ergebnis verständlich auf dem Bildschirm aus.
+
+Beispiel:
+Wenn ich angebe, dass ich 5 Kilometer gelaufen bin und dafür 25 Minuten gebraucht habe, soll mir das Programm ausgeben, dass mein Durchschnittstempo bei 5 Minuten pro Kilometer lag.
+
+Besondere Wünsche:
+Es wäre super, wenn das Programm bei offensichtlich unsinnigen Eingaben (wie einer negativen Streckenlänge oder einer Zeit von 0 Minuten) nicht abstürzt, sondern eine kurze, verständliche Hinweismeldung ausgibt.
+
+Ich bin gespannt auf deine Umsetzung!
