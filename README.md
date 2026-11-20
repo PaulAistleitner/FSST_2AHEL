@@ -9,6 +9,8 @@ Repo dient nur zur Bewertung der Mitarbeit
 |hangman.c    |Hangman Game für Kommandozeile                         |
 |zahlenraten.c|Zahlenratespiel für Kommandozeile                      |
 |mul.c        |Rechner für Rechteck (Umfang, Inhalt) für Kommandozeile|
+|Aufgabenstellung.txt|KI generierte Übungsaufgabe für den Test        |
+|Fahrrad.c    |Fahrradverleih Preisrechner für Kommandozeile          |
 
 
 ## Commit Gliederung
