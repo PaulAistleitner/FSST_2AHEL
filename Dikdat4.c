@@ -13,6 +13,7 @@ void dump(char* wort) {
     for (int i = 0; i < strlen(wort); i++) {
     printf("%c ", wort[i]);
     }
+    printf("\n");
 }
 
 char* init(int sz, char c) {
@@ -25,11 +26,28 @@ char* init(int sz, char c) {
     return wort;
 }
 
+int check(char* wort1, char* wort2, char c)
+{
+    for(int i = 0; wort1[i] != '\0'; i++)
+    {
+        if (wort1[i] == c)
+        {
+            wort2[i] = c;
+        }
+    }
+    return 0;
+}
+
 int main()
 {
-    char* wort = "WORT";
-    char* wort2 = init(strlen(wort), 'A');
+    
+    char* wort1 = "WORT";
+    char* wort2 = init(strlen(wort1), 'A');
 
+    dump(wort2);
+    check(wort1, wort2, 'O');
+    dump(wort2);
+    check(wort1, wort2, 'X');
     dump(wort2);
     free(wort2);
     
